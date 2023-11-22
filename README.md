@@ -49,7 +49,7 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 - An valid Xiaomi account:
   - A unbanned\* Xiaomi account.
   - Each account can only unlock 1 phone in a month and 3 phones in a year period.
-- You have read and understood the [Warning](#-Warning) above.
+- You have read and understood the [Warning](#%EF%B8%8F-warning) above.
 
 \*  According to the unlocking instructions provided by Xiaomi, it will prohibit some accounts and devices from using the unlocking tool, which is called "risk control".
 
