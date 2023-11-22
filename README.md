@@ -1,16 +1,16 @@
 # Xiaomi BootLoader Bypass
 
-![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) ![中文文档](https://img.shields.io/badge/中文文档-brightgreen?style=for-the-badge)
+![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![中文文档](https://img.shields.io/badge/中文文档-brightgreen?style=for-the-badge)](README-zh.md)
 
 A PoC that exploits a vulnerability to bypass the Xiaomi HyperOS community restrictions of BootLoader unlocked account bindings.
 
 Feel free pull request if you want :)
 
-## php-adb
+## 💘 php-adb
 
 The project proudly uses the [php-adb](https://github.com/MlgmXyysd/php-adb) library.
 
-## Buy me a Coffee
+## ☕ Buy me a Coffee
 
 ✨ If you like my projects, you can buy me a coffee at:
 
@@ -18,7 +18,7 @@ The project proudly uses the [php-adb](https://github.com/MlgmXyysd/php-adb) lib
  - [PayPal](https://paypal.me/MlgmXyysd)
  - [Patreon](https://www.patreon.com/MlgmXyysd)
 
-## Warning
+## ⚠️ Warning
 
 After unlocking the BootLoader, you may encounter the following situations:
 
@@ -35,25 +35,25 @@ If you're experiencing any of the above, you should take all the responsibility 
 
 If you're experiencing any of the above, consider yourself damned. Ever since Xiaomi restricted unlocking BootLoader, it has been against Xiaomi's 'geek' spirit and even the GPL. Xiaomi's restrictions on BootLoader unlocking are endless, and there's nothing we as developers can do about it.
 
-## Unlocking requirements
+## 📲 Unlocking requirements
 
 - An valid device:
   - A unbanned\* Xiaomi, Redmi or POCO device.
-  - Device is running the official version of HyperOS.
-  - (Update 2023/11/23) Device is not forced to verify account qualification by Xiaomi.
+  - Your device is running the official version of HyperOS.
+  - (Update 2023/11/23) Your device is not forced to verify account qualification by Xiaomi.
 - An valid SIM card:
-  - Except for tablets that cannot use SIM cards.
+  - \* Except for tablets that cannot use SIM cards.
   - SIM card must not be out of service.
   - SIM card needs to be able to access the internet.
   - Only 2 devices per valid SIM card are allowed to be unlock to a valid SIM card within a three-month period.
 - An valid Xiaomi account:
+  - A unbanned\* Xiaomi account.
   - Each account can only unlock 1 phone in a month and 3 phones in a year period.
-  - Account not banned\*.
-- You have read and understood the Warning above.
+- You have read and understood the [Warning](#-Warning) above.
 
-- \*  According to the unlocking instructions provided by Xiaomi, it will prohibit some accounts and devices from using the unlocking tool, which is called "risk control".
+\*  According to the unlocking instructions provided by Xiaomi, it will prohibit some accounts and devices from using the unlocking tool, which is called "risk control".
 
-## How to use
+## ⚙️ How to use
 
 1. Download and install PHP 8.0+ for your system from the [official website](https://www.php.net/downloads).
 2. Enable OpenSSL extension in `php.ini`.
@@ -69,33 +69,34 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 9. Connect phone to PC via wired interface.
 10. Check `Always allow from this computer` and click `OK`.
 
-- \* See "Unlocking Requirements" below.
+\* See "[Unlocking Requirements](#-Unlocking-requirements)" above.
 
 11. Wait and follow the prompts of script.
 12. After successful binding, you can use the [official unlock tool](https://en.miui.com/unlock/index.html) to check the time you need to wait.
 
-## Workaround
+## 📖 Workaround
 
 - [52 Pojie]()
 - [My Blog]()
 - [My Blog (English)]()
 
-## FAQ
+## 🔖 FAQs
 
 - Q: Why does the unlock tool still remind me to wait 168/360 (or more) hours?
 - A: By principle, this PoC only bypasses the restrictions added for HyperOS. You still need to comply with the restrictions for MIUI.
 
-- Q: Binding failed with error code 401.
+- Q: Binding failed with error code `401`.
 - A: Your Xiaomi account credentials have expired, you need to log out and log in again in your device.
 
-- Q: Binding failed with error code 20086.
+- Q: Binding failed with error code `20086`.
 - A: Your device credentials have expired, you need to reboot your device.
 
-- Q: Binding failed with error code 20090 & 20091.
+- Q: Binding failed with error code `20090` or `20091`.
 - A: Device's Security Device Credential Manager function failure, contact after-sales.
 
-- Q: Binding failed with error code 30001.
+- Q: Binding failed with error code `30001`.
 - A: Your device has been forced to verify the account qualification by Xiaomi. Xiaomi lost its 'geek' spirit a long time ago, and there's nothing we can do about it.
 
-## License
+## ⚖️ License
+
 No license, you are only allowed to use this project. All copyright (and link, etc.) in this software is not allowed to be deleted or changed without permission. All rights are reserved by [MeowCat Studio](https://github.com/MeowCat-Studio), [Meow Mobile](https://github.com/Meow-Mobile) and [NekoYuzu](https://github.com/MlgmXyysd).
