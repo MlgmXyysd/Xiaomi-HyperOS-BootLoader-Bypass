@@ -18,6 +18,7 @@
  * Environment requirement:
  *   - PHP 8.0+
  *   - OpenSSL Extension
+ *   - Curl Extension
  *   - ADB
  * 
  * @author MlgmXyysd
