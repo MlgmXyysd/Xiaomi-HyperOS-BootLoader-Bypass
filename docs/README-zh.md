@@ -1,6 +1,6 @@
 # Xiaomi HyperOS BootLoader Bypass
 
-![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![English](https://img.shields.io/badge/English-brightgreen?style=for-the-badge)](README.md)
+![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![English](https://img.shields.io/badge/English-brightgreen?style=for-the-badge)](README.md) [![日本語](https://img.shields.io/badge/日本語-brightgreen?style=for-the-badge)](README-ja.md)
 
 利用漏洞绕过小米 HyperOS 对 BootLoader 解锁账户绑定限制社区等级的 PoC。
 
