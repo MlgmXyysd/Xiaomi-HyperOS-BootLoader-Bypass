@@ -1,4 +1,4 @@
-# Xiaomi BootLoader Bypass
+# Xiaomi HyperOS BootLoader Bypass
 
 ![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![中文文档](https://img.shields.io/badge/中文文档-brightgreen?style=for-the-badge)](README-zh.md)
 
@@ -51,7 +51,7 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
   - Each account can only unlock 1 phone in a month and 3 phones in a year period.
 - You have read and understood the [Warning](#%EF%B8%8F-warning) above.
 
-\*  According to the unlocking instructions provided by Xiaomi, it will prohibit some accounts and devices from using the unlocking tool, which is called "risk control".
+- \*  According to the unlocking instructions provided by Xiaomi, it will prohibit some accounts and devices from using the unlocking tool, which is called "risk control".
 
 ## ⚙️ How to use
 
@@ -69,21 +69,23 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 9. Connect phone to PC via wired interface.
 10. Check `Always allow from this computer` and click `OK`.
 
-\* See "[Unlocking Requirements](#-Unlocking-requirements)" above.
+- \* See "[Unlocking Requirements](#-Unlocking-requirements)" above.
 
 11. Wait and follow the prompts of script.
 12. After successful binding, you can use the [official unlock tool](https://en.miui.com/unlock/index.html) to check the time you need to wait.
+13. During the waiting period, please use the device normally, keep the SIM card inserted, do not log out of your account or turn off `Find My Phone`, and do not re-bind the device until it is successfully unlocked. The device will automatically send `HeartBeat` packets to the server every once in a while.
 
 ## 📖 Workaround
 
-- [52 Pojie]()
-- [My Blog]()
-- [My Blog (English)]()
+- Undergoing maintenance...
 
 ## 🔖 FAQs
 
 - Q: Why does the unlock tool still remind me to wait 168/360 (or more) hours?
 - A: By principle, this PoC only bypasses the restrictions added for HyperOS. You still need to comply with the restrictions for MIUI.
+
+- Q: The device shows `Couldn't verify, wait a minute or two and try again`.
+- A: This is normal, the binding request on the device side has been blocked by our script. The actual binding result is subject to the script prompt.
 
 - Q: Binding failed with error code `401`.
 - A: Your Xiaomi account credentials have expired, you need to log out and log in again in your device.
@@ -96,6 +98,9 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 
 - Q: Binding failed with error code `30001`.
 - A: Your device has been forced to verify the account qualification by Xiaomi. Xiaomi lost its 'geek' spirit a long time ago, and there's nothing we can do about it.
+
+- Q: Binding failed with error code `86015`.
+- A: The server has rejected this bind request, please try again.
 
 ## ⚖️ License
 
