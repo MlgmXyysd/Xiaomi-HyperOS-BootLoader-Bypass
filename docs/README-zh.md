@@ -59,7 +59,7 @@
 2. 在 `php.ini` 中启用 OpenSSL 和 Curl 扩展。
 3. 将 [php-adb](https://github.com/MlgmXyysd/php-adb) 中的 `adb.php` 放到目录中。
 4. 下载 [platform-tools](https://developer.android.com/studio/releases/platform-tools)，并将其放入 `libraries`。*注意：Mac OS 需要将 `adb` 重命名为 `adb-darwin`。
-5. 打开终端，使用 PHP 解释器执行 [脚本](bypass.php)。
+5. 打开终端，使用 PHP 解释器执行 [脚本](../bypass.php)。
 
 - p.s. Releases 已将所需文件和一键脚本打包。
 

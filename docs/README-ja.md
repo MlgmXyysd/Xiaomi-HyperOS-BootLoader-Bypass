@@ -64,7 +64,7 @@ BootLoader のロック解除に対する Xiaomi の制限は無限であり、�
 3. [php-adb](https://github.com/MlgmXyysd/php-adb) の `adb.php` をディレクトリに配置します。
 4. [platform-tools](https://developer.android.com/studio/releases/platform-tools?hl=ja#downloads) をダウンロードして`libraries` に展開します。
   ※注意: Mac OS では、`adb` の名前を `adb-darwin` に変更する必要があります。
-5. ターミナルを開き、PHP インタープリターを使用して[スクリプト](bypass.php)を実行します。
+5. ターミナルを開き、PHP インタープリターを使用して[スクリプト](../bypass.php)を実行します。
 
 - P.S. [Releases](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/releases/latest) には、必要なファイルとクイック実行スクリプトが同梱されています。
 

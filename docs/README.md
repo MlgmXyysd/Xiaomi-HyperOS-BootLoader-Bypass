@@ -59,7 +59,7 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 2. Enable OpenSSL and Curl extension in `php.ini`.
 3. Place `adb.php` in [php-adb](https://github.com/MlgmXyysd/php-adb) to the directory.
 4. Download [platform-tools](https://developer.android.com/studio/releases/platform-tools) and place them in `libraries`. *Note: Mac OS needs to rename `adb` to `adb-darwin`.*
-5. Open a terminal and use PHP interpreter to execute the [script](bypass.php).
+5. Open a terminal and use PHP interpreter to execute the [script](../bypass.php).
 
 - p.s. Releases has packaged the required files and click-to-run scripts.
 
