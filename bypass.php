@@ -1,32 +1,32 @@
 <?php
 /**
- *
+ * 
  *    Copyright (C) 2002-2024 NekoYuzu (MlgmXyysd) All Rights Reserved.
  *    Copyright (C) 2013-2024 MeowCat Studio All Rights Reserved.
  *    Copyright (C) 2020-2024 Meow Mobile All Rights Reserved.
- *
+ * 
  */
 
 /**
- *
+ * 
  * Xiaomi HyperOS BootLoader Bypass
- *
+ * 
  * https://github.com/MlgmXyysd/Xiaomi-BootLoader-Bypass
- *
+ * 
  * Bypass Xiaomi HyperOS community restrictions of BootLodaer unlock account bind.
- *
+ * 
  * Environment requirement:
  *   - PHP 8.0+
  *   - OpenSSL Extension
  *   - Curl Extension
  *   - ADB
- *
+ * 
  * @author MlgmXyysd
  * @version 1.0
- *
+ * 
  * All copyright in the software is not allowed to be deleted
  * or changed without permission.
- *
+ * 
  */
 
 /***********************
@@ -194,7 +194,15 @@ function http(string $url, string $method, array $fields = array(), array $heade
  * @date   2023/11/20 23:55:41
  */
 
-function postApi(string $_api, array $data = array(), array $header = array(), bool $useForm = false): array|false
+// function postApi(string $_api, array $data = array(), array $header = array(), bool $useForm = false): array|false
+// {
+//     $response = http($GLOBALS["api"] . $_api, "POST", $data, $header, $useForm);
+//     if ($response["http_code"] != 200) {
+//         return false;
+//     }
+//     return json_decode($response["response"], true);
+// }
+function postApi(string $_api, array $data = array(), array $header = array(), bool $useForm = false)
 {
     $response = http($GLOBALS["api"] . $_api, "POST", $data, $header, $useForm);
     if ($response["http_code"] != 200) {
@@ -225,9 +233,14 @@ function signData(string $data): string
  * @date   2023/11/21 00:15:30
  */
 
-function decryptData(string $data): string|false
+// function decryptData(string $data): string|false
+// {
+// 	return openssl_decrypt(base64_decode($data), "AES-128-CBC", $GLOBALS["data_pass"], OPENSSL_RAW_DATA, $GLOBALS["data_iv"]);
+// }
+
+function decryptData(string $data)
 {
-	return openssl_decrypt(base64_decode($data), "AES-128-CBC", $GLOBALS["data_pass"], OPENSSL_RAW_DATA, $GLOBALS["data_iv"]);
+    return openssl_decrypt(base64_decode($data), "AES-128-CBC", $GLOBALS["data_pass"], OPENSSL_RAW_DATA, $GLOBALS["data_iv"]);
 }
 
 /***********************
@@ -305,14 +318,14 @@ $process = proc_open($adb -> bin . " " . $id . "logcat *:S CloudDeviceStatus:V",
 if (is_resource($process)) {
     while (!feof($pipes[1])) {
         $output = fgets($pipes[1]);
-
+		
         if (str_contains($output, "CloudDeviceStatus: args:")) {
             if (preg_match("/args:(.*)/", $output, $matches)) {
                 $args = trim($matches[1]);
             }
 			$adb -> runAdb($id . "shell svc data disable");
         }
-
+		
         if (str_contains($output, "CloudDeviceStatus: headers:")) {
             if (preg_match("/headers:(.*)/", $output, $matches)) {
                 $headers = trim($matches[1]);
@@ -321,7 +334,7 @@ if (is_resource($process)) {
             break;
         }
     }
-
+	
     fclose($pipes[1]);
 }
 
