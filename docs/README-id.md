@@ -55,7 +55,7 @@ Jika Anda mengalami salah satu hal di atas, anggaplah diri Anda terkutuk. Sejak 
 
 - ## ⚙️ Bagaimana cara menggunakan
 
-- 1. Unduh dan instal PHP 8.0+ untuk sistem Anda dari [situs web resmi](https://www.php.net/downloads).
+1. Unduh dan instal PHP 8.0+ untuk sistem Anda dari [situs web resmi](https://www.php.net/downloads).
 2. Aktifkan ekstensi OpenSSL dan Curl di `php.ini`.
 3. Tempatkan `adb.php` di [php-adb](https://github.com/MlgmXyysd/php-adb) ke direktori.
 4. Unduh [platform-tools](https://developer.android.com/studio/releases/platform-tools) dan letakkan di `libraries`. *Catatan: Mac OS perlu mengganti nama `adb` menjadi `adb-darwin`.*
@@ -69,7 +69,7 @@ Jika Anda mengalami salah satu hal di atas, anggaplah diri Anda terkutuk. Sejak 
 10. Hubungkan telepon ke PC melalui antarmuka kabel.
 11. Centang `Selalu izinkan dari komputer ini` dan klik `OK`.
 
-- \* Lihat "[Persyaratan Membuka Kunci](#-Persyaratan Membuka Kunci)" di atas.
+- \* Lihat "[Persyaratan Membuka Kunci](#-Unlocking-requirements)" di atas.
 
 11. Tunggu dan ikuti petunjuk skrip.
 12. Setelah pengaitan berhasil, Anda dapat menggunakan [alat buka kunci resmi](https://en.miui.com/unlock/index.html) untuk memeriksa waktu yang Anda perlukan untuk menunggu.
@@ -104,4 +104,4 @@ Jika Anda mengalami salah satu hal di atas, anggaplah diri Anda terkutuk. Sejak 
 
 ## ⚖️ Lisensi
 
-Tanpa lisensi, Anda hanya diperbolehkan menggunakan proyek ini. Semua hak cipta (dan tautan, dsb.) dalam perangkat lunak ini tidak boleh dihapus atau diubah tanpa izin. Semua hak dilindungi oleh [MeowCat Studio](https://github.com/MeowCat-Studio), [Meow Mobile](https://github.com/Meow-Mobile) dan [NekoYuzu](https://github .com/MlgmXyysd).
+Tanpa lisensi, Anda hanya diperbolehkan menggunakan proyek ini. Semua hak cipta (dan tautan, dsb.) dalam perangkat lunak ini tidak boleh dihapus atau diubah tanpa izin. Semua hak dilindungi oleh [MeowCat Studio](https://github.com/MeowCat-Studio), [Meow Mobile](https://github.com/Meow-Mobile) dan [NekoYuzu](https://github.com/MlgmXyysd).
