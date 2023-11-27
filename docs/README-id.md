@@ -49,7 +49,7 @@ Jika Anda mengalami salah satu hal di atas, anggaplah diri Anda terkutuk. Sejak 
 - Akun Xiaomi yang valid:
   - Akun Xiaomi yang tidak diblokir\*.
   - Setiap akun hanya dapat membuka 1 ponsel dalam sebulan dan 3 ponsel dalam periode satu tahun.
-- Anda telah membaca dan memahami [Peringatan](#%EF%B8%8F-warning) di atas.
+- Anda telah membaca dan memahami [Peringatan](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/tree/master/docs#%EF%B8%8F-warning) di atas.
 
 - \* Menurut instruksi membuka kunci yang diberikan oleh Xiaomi,itu akan melarang beberapa akun dan perangkat menggunakan alat pembuka kunci, yang disebut "pengendalian risiko".
 
@@ -69,7 +69,7 @@ Jika Anda mengalami salah satu hal di atas, anggaplah diri Anda terkutuk. Sejak 
 10. Hubungkan telepon ke PC melalui antarmuka kabel.
 11. Centang `Selalu izinkan dari komputer ini` dan klik `OK`.
 
-- \* Lihat "[Persyaratan Membuka Kunci](#-Unlocking-requirements)" di atas.
+- \* Lihat "[Persyaratan Membuka Kunci](hhttps://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/tree/master/docs#-Unlocking-requirements)" di atas.
 
 11. Tunggu dan ikuti petunjuk skrip.
 12. Setelah pengaitan berhasil, Anda dapat menggunakan [alat buka kunci resmi](https://en.miui.com/unlock/index.html) untuk memeriksa waktu yang Anda perlukan untuk menunggu.
