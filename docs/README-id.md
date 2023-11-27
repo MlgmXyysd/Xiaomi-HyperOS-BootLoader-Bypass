@@ -69,7 +69,7 @@ Jika Anda mengalami salah satu hal di atas, anggaplah diri Anda terkutuk. Sejak 
 10. Hubungkan telepon ke PC melalui antarmuka kabel.
 11. Centang `Selalu izinkan dari komputer ini` dan klik `OK`.
 
-- \* Lihat "[Persyaratan Membuka Kunci](hhttps://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/tree/master/docs#-Unlocking-requirements)" di atas.
+- \* Lihat "[Persyaratan Membuka Kunci](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/tree/master/docs#-Unlocking-requirements)" di atas.
 
 11. Tunggu dan ikuti petunjuk skrip.
 12. Setelah pengaitan berhasil, Anda dapat menggunakan [alat buka kunci resmi](https://en.miui.com/unlock/index.html) untuk memeriksa waktu yang Anda perlukan untuk menunggu.
