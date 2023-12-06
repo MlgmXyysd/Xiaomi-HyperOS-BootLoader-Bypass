@@ -38,20 +38,20 @@ Jika Anda mengalami salah satu hal di atas, anggaplah diri Anda terkutuk. Sejak 
 ## 📲 Persyratan buka kunci
 
 - Perangkat yang valid:
-  - Perangkat\* Xiaomi, Redmi, atau POCO yang tidak diblokir.
+  - Perangkat Xiaomi, Redmi, atau POCO\* yang tidak diblokir.
   - Perangkat Anda menjalankan versi resmi HyperOS.
   - (Pembaruan 2023/11/23) Perangkat Anda tidak dipaksa untuk memverifikasi kualifikasi akun oleh Xiaomi.
 - Kartu SIM yang valid:
-  - \* Kecuali tablet yang tidak dapat menggunakan kartu SIM.
+  - Kecuali tablet yang tidak dapat menggunakan kartu SIM.
   - Kartu SIM tidak boleh keluar dari layanan.
   - Kartu SIM harus dapat mengakses internet.
   - Hanya 2 perangkat per kartu SIM yang valid yang dibolehkan untuk membuka kunci dengan kartu SIM yang valid dalam jangka waktu tiga bulan.
 - Akun Xiaomi yang valid:
-  - Akun Xiaomi yang tidak diblokir\*.
+  - Akun Xiaomi\* yang tidak diblokir.
   - Setiap akun hanya dapat membuka 1 ponsel dalam sebulan dan 3 ponsel dalam periode satu tahun.
 - Anda telah membaca dan memahami [Peringatan](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/tree/master/docs#%EF%B8%8F-warning) di atas.
 
-- \* Menurut instruksi membuka kunci yang diberikan oleh Xiaomi,itu akan melarang beberapa akun dan perangkat menggunakan alat pembuka kunci, yang disebut "pengendalian risiko".
+- Menurut instruksi membuka kunci yang diberikan oleh Xiaomi,itu akan melarang beberapa akun dan perangkat menggunakan alat pembuka kunci, yang disebut "pengendalian risiko".
 
 - ## ⚙️ Bagaimana cara menggunakan
 
@@ -64,12 +64,12 @@ Jika Anda mengalami salah satu hal di atas, anggaplah diri Anda terkutuk. Sejak 
 - cat. Rilis telah mengemas file yang diperlukan dan skrip klik untuk menjalankan
 
 6. Ketuk berulang kali pada `Pengaturan - Tentang Ponsel - Versi MIUI` untuk mengaktifkan `Opsi Pengembang`.
-7. Aktifkan `Membuka Kunci OEM`, `USB Debugging` dan `USB Debugging (Pengaturan Keamanan)` di `Pengaturan - Pengaturan Tambahan - Opsi Pengembangan`.
-8. Masuk akun Xiaomi _valid_\*.
+7. Aktifkan `Membuka Kunci OEM`, `USB Debugging` dan `USB Debugging (Pengaturan Keamanan)` di `Pengaturan - Pengaturan Tambahan - Opsi Pengembang`.
+8. Masuk akun Xiaomi\* _valid_.
 10. Hubungkan telepon ke PC melalui antarmuka kabel.
 11. Centang `Selalu izinkan dari komputer ini` dan klik `OK`.
 
-- \* Lihat "[Persyaratan Membuka Kunci](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/tree/master/docs#-Unlocking-requirements)" di atas.
+- Lihat [Persyaratan Membuka Kunci](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/tree/master/docs#-Unlocking-requirements) di atas.
 
 11. Tunggu dan ikuti petunjuk skrip.
 12. Setelah pengaitan berhasil, Anda dapat menggunakan [alat buka kunci resmi](https://en.miui.com/unlock/index.html) untuk memeriksa waktu yang Anda perlukan untuk menunggu.
