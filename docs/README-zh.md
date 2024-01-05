@@ -56,7 +56,7 @@
 ## ⚙️ 使用教程
 
 1. 从 [官方网站](https://www.php.net/downloads) 下载并安装适用于您操作系统的 PHP 8.0+。
-2. 在 `php.ini` 中启用 OpenSSL 和 Curl 扩展。
+2. 在 `php.ini` 中启用 OpenSSL 和 Curl 扩展。（如果脚本未正常工作，请将 `extension_dir` 设置为 PHP 的 `ext` 文件夹路径。）
 3. 将 [php-adb](https://github.com/MlgmXyysd/php-adb) 中的 `adb.php` 放到目录中。
 4. 下载 [platform-tools](https://developer.android.com/studio/releases/platform-tools)，并将其放入 `libraries`。*注意：Mac OS 需要将 `adb` 重命名为 `adb-darwin`。
 5. 打开终端，使用 PHP 解释器执行 [脚本](../bypass.php)。
