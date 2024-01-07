@@ -60,7 +60,8 @@ BootLoader のロック解除に対する Xiaomi の制限は無限であり、�
 
 ## ⚙️ 使用方法
 1. [公式サイト](https://www.php.net/downloads) からシステムに PHP 8.0+ をダウンロードしてインストールします。
-2. `php.ini` で OpenSSL と Curl 拡張機能を有効にします。
+2. `php.ini` で OpenSSL と Curl 拡張機能を有効にします。  
+  (スクリプトが機能しない場合は、`extension_dir` を PHP の `ext` ディレクトリに設定してください。)
 3. [php-adb](https://github.com/MlgmXyysd/php-adb) の `adb.php` をディレクトリに配置します。
 4. [platform-tools](https://developer.android.com/studio/releases/platform-tools?hl=ja#downloads) をダウンロードして`libraries` に展開します。
   ※注意: Mac OS では、`adb` の名前を `adb-darwin` に変更する必要があります。
