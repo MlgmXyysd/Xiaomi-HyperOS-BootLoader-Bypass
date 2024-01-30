@@ -1,32 +1,32 @@
 <?php
 /**
- *
+ * 
  *    Copyright (C) 2002-2024 NekoYuzu (MlgmXyysd) All Rights Reserved.
  *    Copyright (C) 2013-2024 MeowCat Studio All Rights Reserved.
  *    Copyright (C) 2020-2024 Meow Mobile All Rights Reserved.
- *
+ * 
  */
 
 /**
- *
+ * 
  * Xiaomi HyperOS BootLoader Bypass
- *
+ * 
  * https://github.com/MlgmXyysd/Xiaomi-BootLoader-Bypass
- *
+ * 
  * Bypass Xiaomi HyperOS community restrictions of BootLodaer unlock account bind.
- *
+ * 
  * Environment requirement:
  *   - PHP 8.0+
  *   - OpenSSL Extension
  *   - Curl Extension
  *   - ADB
- *
+ * 
  * @author MlgmXyysd
  * @version 1.0
- *
+ * 
  * All copyright in the software is not allowed to be deleted
  * or changed without permission.
- *
+ * 
  */
 
 /***********************
@@ -35,7 +35,7 @@
 
 // Global flag
 // If you are running a Global ROM (Non-China Mainland), set it to true
-$useGlobal = false;
+$useGlobal = true;
 
 /*********************
  *    Configs End    *
@@ -256,6 +256,7 @@ logf("************************************", "g");
 /********************
  *    Main Logic    *
  ********************/
+ 
 
 logf("Starting ADB server...");
 
@@ -305,14 +306,14 @@ $process = proc_open($adb -> bin . " " . $id . "logcat *:S CloudDeviceStatus:V",
 if (is_resource($process)) {
     while (!feof($pipes[1])) {
         $output = fgets($pipes[1]);
-
+		
         if (str_contains($output, "CloudDeviceStatus: args:")) {
             if (preg_match("/args:(.*)/", $output, $matches)) {
                 $args = trim($matches[1]);
             }
 			$adb -> runAdb($id . "shell svc data disable");
         }
-
+		
         if (str_contains($output, "CloudDeviceStatus: headers:")) {
             if (preg_match("/headers:(.*)/", $output, $matches)) {
                 $headers = trim($matches[1]);
@@ -321,13 +322,19 @@ if (is_resource($process)) {
             break;
         }
     }
-
+	
     fclose($pipes[1]);
 }
 
+useglobal:
 logf("Refactoring parameters...");
+if($useGlobal){
+	logf("Using Global...");
+}
 
 $data = json_decode(decryptData($args), true);
+var_dump($args);
+//$data = json_decode(decryptData($args), true);
 
 // V816 is the special identity for HyperOS in MIUI version
 $data["rom_version"] = str_replace("V816", "V14", $data["rom_version"]);
@@ -342,6 +349,8 @@ if (preg_match("/Cookie=\[(.*)\]/", $headers, $matches)) {
 }
 
 logf("Sending POST request...");
+logf($data);
+
 $res = postApi("unlock/applyBind", array(
 	"data" => $data,
 	"sid" => "miui_sec_android",
@@ -355,7 +364,8 @@ $adb -> runAdb($id . "shell svc data enable");
 
 if (!$res) {
 	logf("Fail to send request, check your internet connection.", "r", "!");
-	exit();
+	$useGlobal = true;
+	goto useglobal;
 }
 
 switch ($res["code"]) {
