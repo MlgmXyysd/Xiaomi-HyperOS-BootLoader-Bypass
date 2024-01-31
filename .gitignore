@@ -1,0 +1,3 @@
+adb.php
+libraries/*
+!libraries/placeholder
