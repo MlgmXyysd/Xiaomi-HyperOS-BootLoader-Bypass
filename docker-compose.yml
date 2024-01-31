@@ -1,0 +1,6 @@
+services:
+  php-cli:
+    image: php:8.2-apache
+    restart: unless-stopped
+    volumes:
+      - .:/var/www/html
