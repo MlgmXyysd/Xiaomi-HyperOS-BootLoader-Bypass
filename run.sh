@@ -65,6 +65,10 @@ function _start ()
 {
   _stop
   _build
+  if command -v adb &> /dev/null;
+  then
+    adb kill-server
+  fi
   docker compose up -d
 }
 

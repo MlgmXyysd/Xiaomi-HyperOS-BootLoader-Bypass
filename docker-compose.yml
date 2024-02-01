@@ -1,6 +1,8 @@
 services:
   php-cli:
     image: php:8.2-apache
+    privileged: true
     restart: unless-stopped
     volumes:
       - .:/var/www/html
+      - /dev/bus/usb:/dev/bus/usb
