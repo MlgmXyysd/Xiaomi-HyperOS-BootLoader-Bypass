@@ -80,6 +80,7 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 - Undergoing maintenance...
 
 ## 🔖 FAQs
+
 - **Q: Binding failed with error code `10000`.**
   - A: Xiaomi has changed the encryption method from AES only encryption to RSA+AES hybrid encryption in the new version of settings APP. To solve this issue, you can try downgrading the settings app to an [old version](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/releases/tag/1.0-fix). For further information, please refer to [here](https://twitter.com/realMlgmXyysd/status/1748386904050110675).
 
