@@ -1,4 +1,4 @@
-![3eb6e72ff724e5847a064b0814038afc](https://github.com/xbn2002/Xiaomi-HyperOS-BootLoader-Bypass/assets/27143040/aef7e055-ba0a-44ce-9b51-7b22220094a4)# Xiaomi HyperOS BootLoader Bypass
+# Xiaomi HyperOS BootLoader Bypass
 
 ![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![English](https://img.shields.io/badge/English-brightgreen?style=for-the-badge)](README.md) [![日本語](https://img.shields.io/badge/日本語-brightgreen?style=for-the-badge)](README-ja.md)
 
