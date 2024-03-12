@@ -1,4 +1,4 @@
-# Xiaomi HyperOS BootLoader Bypass
+![3eb6e72ff724e5847a064b0814038afc](https://github.com/xbn2002/Xiaomi-HyperOS-BootLoader-Bypass/assets/27143040/aef7e055-ba0a-44ce-9b51-7b22220094a4)# Xiaomi HyperOS BootLoader Bypass
 
 ![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen?style=for-the-badge) [![English](https://img.shields.io/badge/English-brightgreen?style=for-the-badge)](README.md) [![日本語](https://img.shields.io/badge/日本語-brightgreen?style=for-the-badge)](README-ja.md)
 
@@ -81,6 +81,15 @@
 
 ## 🔖 FAQ
 
+- **Q: 绑定失败，错误代码为 `10000`。**
+  - A: 小米在新版设置 APP 中将加密方式从仅 AES 加密更改为 RSA+AES 混合加密。要解决此问题，您可以尝试将设置 APP 降级到[旧版本](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/releases/tag/1.0-fix)。如需了解更多信息，请参考[此处](https://www.coolapk.com/feed/53042929?shareKey=NzhmMGE5MTIxOWIwNjVjNDlhMzM)。
+
+- **Q: 绑定失败，错误代码为 `30003`。**
+  - A: 根据小米目前的解锁政策，部分产品系列不支持解锁（例如: 红米 Note 13/13 Pro/13 Pro+）。无论您的设备当前运行的是 HyperOS 还是 MIUI，您在绑定时都会获得相同的维护提示，并且此问题没有可用的解决方案。
+
+- **Q: 绑定失败，错误代码为 `30001`。**
+  - A: 您的设备已被小米强制验证账户资格。小米早就抛弃了"极客"精神，我们对此无能为力。
+
 - Q: 为什么解锁工具仍然提醒我等待 168/360（或更长）小时？
   - A: 根据原理，该 PoC 只绕过了小米为 HyperOS 额外添加的限制。您仍然需要遵循 MIUI 的限制。
 
@@ -95,9 +104,6 @@
 
 - Q: 绑定失败，错误代码为 `20090` 或 `20091`。
   - A: 设备的 `Security Device Credential Manager` 功能已损坏，请联系售后服务寻求支持。
-
-- Q: 绑定失败，错误代码为 `30001`。
-  - A: 您的设备已被小米强制验证账户资格。小米早就抛弃了"极客"精神，我们对此无能为力。
 
 - Q: 绑定失败，错误代码为 `86015`。
   - A: 服务器拒绝了本次绑定请求，请重试。
