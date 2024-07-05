@@ -39,6 +39,7 @@
 | Xiaomi MIX Fold | cetus | 2021-03-30 | MIUI Fold | ✔️ Opening |
 | Xiaomi MIX Fold 2 | zizhan | 2022-08-11 | MIUI Fold | ✔️ Opening |
 | Xiaomi MIX Fold 3 | babylon | 2023-08-14 | MIUI Fold | ✔️ Opening |
+| Xiaomi MIX Fold 4 | goku | 2024-XX-XX | Xiaomi HyperOS | ❌ Blocked |
 | Xiaomi MIX Flip | ruyi | 2024-XX-XX | Xiaomi HyperOS | ❌ Blocked |
 | Xiaomi Civi | mona | 2021-09-27 | MIUI | ✔️ Opening |
 | Xiaomi Civi 1S | zijin | 2022-04-21 | MIUI | ✔️ Opening |
