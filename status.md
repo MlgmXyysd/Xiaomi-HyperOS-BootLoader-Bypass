@@ -96,6 +96,7 @@
 | Redmi K70E | duchamp | 2023-11-29 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi K70 | vermeer | 2023-11-29 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi K70 Pro | manet | 2023-11-29 | Xiaomi HyperOS | ❌ Blocked |
+| Redmi K70 Ultra | rothko | 2024-XX-XX | Xiaomi HyperOS | ❌ Blocked |
 | Redmi Pad SE | xun | 2023-09-21 | MIUI Pad | ✔️ Opening |
 | Redmi Pad | yunluo | 2022-10-27 | MIUI Pad | ✔️ Opening |
 | Redmi Pad Pro | dizi | 2024-04-10 | Xiaomi HyperOS | ❌ Blocked |
