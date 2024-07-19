@@ -39,8 +39,8 @@
 | Xiaomi MIX Fold | cetus | 2021-03-30 | MIUI Fold | ✔️ Opening |
 | Xiaomi MIX Fold 2 | zizhan | 2022-08-11 | MIUI Fold | ✔️ Opening |
 | Xiaomi MIX Fold 3 | babylon | 2023-08-14 | MIUI Fold | ✔️ Opening |
-| Xiaomi MIX Fold 4 | goku | 2024-XX-XX | Xiaomi HyperOS | ❌ Blocked |
-| Xiaomi MIX Flip | ruyi | 2024-XX-XX | Xiaomi HyperOS | ❌ Blocked |
+| Xiaomi MIX Fold 4 | goku | 2024-07-19 | Xiaomi HyperOS | ❌ Blocked |
+| Xiaomi MIX Flip | ruyi | 2024-07-19 | Xiaomi HyperOS | ❌ Blocked |
 | Xiaomi Civi | mona | 2021-09-27 | MIUI | ✔️ Opening |
 | Xiaomi Civi 1S | zijin | 2022-04-21 | MIUI | ✔️ Opening |
 | Xiaomi Civi 2 | ziyi | 2022-09-27 | MIUI | ✔️ Opening |
@@ -97,7 +97,7 @@
 | Redmi K70E | duchamp | 2023-11-29 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi K70 | vermeer | 2023-11-29 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi K70 Pro | manet | 2023-11-29 | Xiaomi HyperOS | ❌ Blocked |
-| Redmi K70 Ultra | rothko | 2024-XX-XX | Xiaomi HyperOS | ❌ Blocked |
+| Redmi K70 Ultra | rothko | 2024-07-19 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi Pad SE | xun | 2023-09-21 | MIUI Pad | ✔️ Opening |
 | Redmi Pad | yunluo | 2022-10-27 | MIUI Pad | ✔️ Opening |
 | Redmi Pad Pro | dizi | 2024-04-10 | Xiaomi HyperOS | ❌ Blocked |
