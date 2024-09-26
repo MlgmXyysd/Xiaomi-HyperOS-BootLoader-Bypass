@@ -82,10 +82,10 @@
 | Redmi Note 13R Pro | gold | 2023-11-20 | MIUI | ⚠️ Unsupported |
 | Redmi Note 13 Pro | garnet | 2023-09-21 | MIUI | ⚠️ Unsupported |
 | Redmi Note 13 Pro+ | zircon | 2023-09-21 | MIUI | ⚠️ Unsupported |
+| Redmi Turbo 3 | peridot | 2024-04-10 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi Note 14 | beryl | 2024-09-26 | Xiaomi HyperOS | ❓ Unknown |
 | Redmi Note 14 Pro | malachite | 2024-09-26 | Xiaomi HyperOS | ❓ Unknown |
 | Redmi Note 14 Pro+ | amethyst | 2024-09-26 | Xiaomi HyperOS | ❌ Blocked |
-| Redmi Turbo 3 | peridot | 2024-04-10 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi K40 Gaming | ares | 2021-04-27 | MIUI | ✔️ Opening |
 | Redmi K40 | alioth | 2021-02-25 | MIUI | ✔️ Opening |
 | Redmi K40S | munch | 2022-03-17 | MIUI | ✔️ Opening |
