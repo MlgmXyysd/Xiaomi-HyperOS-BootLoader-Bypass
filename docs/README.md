@@ -81,6 +81,15 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 
 ## 🔖 FAQs
 
+- **Q: Binding failed with error code `10000`.**
+  - A: Xiaomi has changed the encryption method from AES only encryption to RSA+AES hybrid encryption in the new version of settings APP. To solve this issue, you can try downgrading the settings app to an [old version](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/releases/tag/1.0-fix). For further information, please refer to [here](https://twitter.com/realMlgmXyysd/status/1748386904050110675).
+
+- **Q: Binding failed with error code `30003`.**
+  - A: Some product series DO NOT SUPPORT unlocking (e.g. Redmi Note 13/13 Pro/13 Pro+) according to Xiaomi's current unlocking policy. You'll get the same maintenance tips whether your device is running HyperOS or MIUI on these devices, and there is NO SOLUTION AVAILABLE for this issue.
+
+- **Q: Binding failed with error code `30001`.**
+  - A: Your device has been forced to verify the account qualification by Xiaomi. Xiaomi lost its 'geek' spirit a long time ago, and there's nothing we can do about it.
+
 - Q: Why does the unlock tool still remind me to wait 168/360 (or more) hours?
   - A: By principle, this PoC only bypasses the restrictions added for HyperOS. You still need to comply with the restrictions for MIUI.
 
@@ -95,9 +104,6 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 
 - Q: Binding failed with error code `20090` or `20091`.
   - A: Device's Security Device Credential Manager function failure, contact after-sales.
-
-- Q: Binding failed with error code `30001`.
-  - A: Your device has been forced to verify the account qualification by Xiaomi. Xiaomi lost its 'geek' spirit a long time ago, and there's nothing we can do about it.
 
 - Q: Binding failed with error code `86015`.
   - A: The server has rejected this bind request, please try again.
