@@ -7,7 +7,8 @@
 
 - ✔️ Opening: Unlock channel available. Restrictions can be bypassed.
 - ❌ Blocked: Xiaomi has enforced verification. Unlocking is only possible with an authorized account.
-- ⚠️ Closed: Xiaomi prohibits unlocking this device, regardless of permissions.
+- ⚠️ Unsupported: Xiaomi prohibits unlocking this device, regardless of permissions.
+- ❓ Unknown: The unlock policy for this device could not be found in Xiaomi servers. Please refer to the actual situation. (Feedback required)
 
 ----
 
@@ -34,7 +35,7 @@
 | Xiaomi 14 | houji | 2023-10-26 | Xiaomi HyperOS | ❌ Blocked |
 | Xiaomi 14 Pro | shennong | 2023-10-26 | Xiaomi HyperOS | ❌ Blocked |
 | Xiaomi 14 Pro Ti Satellite | shennong | 2024-02-22 | Xiaomi HyperOS | ❌ Blocked |
-| Xiaomi 14 Ultra | aurora | 2024-02-22 | Xiaomi HyperOS | ❌ Blocked |
+| Xiaomi 14 Ultra | aurora | 2024-02-22 | Xiaomi HyperOS | ❓ Unknown |
 | Xiaomi MIX 4 | odin | 2021-08-10 | MIUI | ✔️ Opening |
 | Xiaomi MIX Fold | cetus | 2021-03-30 | MIUI Fold | ✔️ Opening |
 | Xiaomi MIX Fold 2 | zizhan | 2022-08-11 | MIUI Fold | ✔️ Opening |
@@ -60,6 +61,7 @@
 | Redmi Note 12R | sky | 2023-06-28 | MIUI | ✔️ Opening |
 | Redmi 13R | air | 2023-12-08 | MIUI | ✔️ Opening |
 | Redmi 13C | air | 2023-12-29 | MIUI | ✔️ Opening |
+| Redmi 14R | flame | 2024-09-18 | Xiaomi HyperOS | ❓ Unknown |
 | Redmi Note 11R | light | 2022-09-29 | MIUI | ✔️ Opening |
 | Redmi Note 11E | light | 2022-03-01 | MIUI | ✔️ Opening |
 | Redmi Note 11E Pro | veux | 2022-03-01 | MIUI | ✔️ Opening |
@@ -76,10 +78,13 @@
 | Redmi Note 12 Turbo | marble | 2023-03-28 | MIUI | ✔️ Opening |
 | Redmi Note 12T Pro | pearl | 2023-05-30 | MIUI | ✔️ Opening |
 | Redmi Note 13R | breeze | 2024-05-30 | Xiaomi HyperOS | ❌ Blocked |
-| Redmi Note 13 | gold | 2023-09-21 | MIUI | ⚠️ Closed |
-| Redmi Note 13R Pro | gold | 2023-11-20 | MIUI | ⚠️ Closed |
-| Redmi Note 13 Pro | garnet | 2023-09-21 | MIUI | ⚠️ Closed |
-| Redmi Note 13 Pro+ | zircon | 2023-09-21 | MIUI | ⚠️ Closed |
+| Redmi Note 13 | gold | 2023-09-21 | MIUI | ⚠️ Unsupported |
+| Redmi Note 13R Pro | gold | 2023-11-20 | MIUI | ⚠️ Unsupported |
+| Redmi Note 13 Pro | garnet | 2023-09-21 | MIUI | ⚠️ Unsupported |
+| Redmi Note 13 Pro+ | zircon | 2023-09-21 | MIUI | ⚠️ Unsupported |
+| Redmi Note 14 | beryl | 2024-09-26 | Xiaomi HyperOS | ❓ Unknown |
+| Redmi Note 14 Pro | malachite | 2024-09-26 | Xiaomi HyperOS | ❓ Unknown |
+| Redmi Note 14 Pro+ | amethyst | 2024-09-26 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi Turbo 3 | peridot | 2024-04-10 | Xiaomi HyperOS | ❌ Blocked |
 | Redmi K40 Gaming | ares | 2021-04-27 | MIUI | ✔️ Opening |
 | Redmi K40 | alioth | 2021-02-25 | MIUI | ✔️ Opening |
