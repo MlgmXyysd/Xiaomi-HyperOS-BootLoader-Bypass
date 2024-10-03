@@ -32,6 +32,7 @@
 | Xiaomi 13 | fuxi | 2022-12-11 | MIUI | ✔️ Opening |
 | Xiaomi 13 Pro | nuwa | 2022-12-12 | MIUI | ✔️ Opening |
 | Xiaomi 13 Ultra | ishtar | 2023-04-18 | MIUI | ✔️ Opening |
+| Xiaomi Note 13 | sapphiren | 2024-10-03 | Xiaomi HyperOS| ✔️ Opening |
 | Xiaomi 14 | houji | 2023-10-26 | Xiaomi HyperOS | ❌ Blocked |
 | Xiaomi 14 Pro | shennong | 2023-10-26 | Xiaomi HyperOS | ❌ Blocked |
 | Xiaomi 14 Pro Ti Satellite | shennong | 2024-02-22 | Xiaomi HyperOS | ❌ Blocked |
