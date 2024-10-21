@@ -36,7 +36,7 @@ function _build ()
 function _main ()
 {
   case "${1}" in
-    bulid)
+    build)
       _build
       ;;
     login)

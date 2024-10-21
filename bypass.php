@@ -230,6 +230,12 @@ function decryptData(string $data): string|false
 	return openssl_decrypt(base64_decode($data), "AES-128-CBC", $GLOBALS["data_pass"], OPENSSL_RAW_DATA, $GLOBALS["data_iv"]);
 }
 
+function outputErrormessageAndExit(string $message)
+{
+  printf("Error:: %s.", $message);
+  exit(10);
+}
+
 /***********************
  *    Functions End    *
  ***********************/
@@ -328,6 +334,15 @@ if (is_resource($process)) {
 logf("Refactoring parameters...");
 
 $data = json_decode(decryptData($args), true);
+
+if (!is_array($data)) {
+  $argsAsJSON = json_encode($args);
+  outputErrormessageAndExit("Data is not an array. Unencryptes args as json are:" . $argsAsJSON);
+}
+if (!array_key_exists("rom_version", $data)) {
+  $dataAsJSON = json_encode($data);
+  outputErrormessageAndExit("Invalid data, key 'rom_version' not found: " . $dataAsJSON);
+}
 
 // V816 is the special identity for HyperOS in MIUI version
 $data["rom_version"] = str_replace("V816", "V14", $data["rom_version"]);
