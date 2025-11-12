@@ -63,14 +63,13 @@ Xiaomi が BootLoader のロック解除を制限して以来、Xiaomi の「オ
 
 ## ⚙️ 使用方法
 1. [公式サイト](https://www.php.net/downloads) からシステムに PHP 8.0+ をダウンロードしてインストールします。
-2. `php.ini` で OpenSSL と Curl 拡張機能を有効にします。  
-  (スクリプトが機能しない場合は、`extension_dir` を PHP の `ext` ディレクトリに設定してください。)
+2. `php.ini`でOpenSSLとCurl拡張機能を有効にします。（スクリプトが正常に動作しない場合は、768行目の` ;extension_dir = "ext"`の前のセミコロンを削除してください。）
 3. [php-adb](https://github.com/MlgmXyysd/php-adb) の `adb.php` をディレクトリに配置します。
-4. [platform-tools](https://developer.android.com/studio/releases/platform-tools?hl=ja#downloads) をダウンロードして`libraries` に展開します。
+4. [platform-tools](https://developer.android.com/studio/releases/platform-tools)をダウンロードして、`libraries`フォルダに配置するか、既存のadbディレクトリをシステム変数として設定します。
   ※注意: Mac OS では、`adb` の名前を `adb-darwin` に変更する必要があります。
 5. ターミナルを開き、PHP インタープリターを使用して[スクリプト](../bypass.php)を実行します。
 
-- P.S. [Releases](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/releases/latest) には、必要なファイルとクイック実行スクリプトが同梱されています。
+- P.S. [Releases](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass/releases/latest) には、必要なファイルとクイック実行スクリプトが同梱されていますが、phpは含まれていません。
 
 6. `設定`→`デバイス情報`→`MIUIバージョン`を７回以上連続でタッチして`開発者向けオプション`を有効にします。
 7. `設定`→`追加設定`→`開発者向けオプション`で、`OEMロック解除`、`USBデバッグ`、`USBデバッグ (セキュリティ設定)` を有効にします。

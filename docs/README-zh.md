@@ -56,12 +56,12 @@
 ## ⚙️ 使用教程
 
 1. 从 [官方网站](https://www.php.net/downloads) 下载并安装适用于您操作系统的 PHP 8.0+。
-2. 在 `php.ini` 中启用 OpenSSL 和 Curl 扩展。（如果脚本未正常工作，请将 `extension_dir` 设置为 PHP 的 `ext` 文件夹路径。）
+2. 在 `php.ini` 中启用 OpenSSL 和 Curl 扩展。（如果脚本未正常工作，Windows用户请将第768行 `;extension_dir = "ext"` 前的分号删掉。）
 3. 将 [php-adb](https://github.com/MlgmXyysd/php-adb) 中的 `adb.php` 放到目录中。
-4. 下载 [platform-tools](https://developer.android.com/studio/releases/platform-tools)，并将其放入 `libraries`。*注意：Mac OS 需要将 `adb` 重命名为 `adb-darwin`。
+4. 下载 [platform-tools](https://developer.android.com/studio/releases/platform-tools)，并将其放入 `libraries`，也可将直接将已有adb目录设置为系统变量。*注意：Mac OS 需要将 `adb` 重命名为 `adb-darwin`。
 5. 打开终端，使用 PHP 解释器执行 [脚本](../bypass.php)。
 
-- p.s. Releases 已将所需文件和一键脚本打包。
+- p.s. Releases 已将所需文件和一键脚本打包，但是并不包含php。
 
 6. 多次点击`设置 - 关于手机 - MIUI 版本`启用`开发者选项`。
 7. 在`设置 - 附加设置 - 开发者选项`中启用`OEM 解锁`、`USB 调试`和`USB 调试（安全设置）`。

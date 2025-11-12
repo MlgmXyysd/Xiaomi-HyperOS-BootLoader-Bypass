@@ -56,12 +56,12 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 ## ⚙️ How to use
 
 1. Download and install PHP 8.0+ for your system from the [official website](https://www.php.net/downloads).
-2. Enable OpenSSL and Curl extension in `php.ini`. (And/or set `extension_dir` to your PHP's `ext` directory if script not work.)
+2. Enable the OpenSSL and Curl extensions in `php.ini`. (If the script does not work properly, remove the semicolon before `;extension_dir = "ext"` on line 768 if you are Windows.)
 3. Place `adb.php` in [php-adb](https://github.com/MlgmXyysd/php-adb) to the directory.
-4. Download [platform-tools](https://developer.android.com/studio/releases/platform-tools) and place them in `libraries`. *Note: Mac OS needs to rename `adb` to `adb-darwin`.*
+4. Download [platform-tools](https://developer.android.com/studio/releases/platform-tools) and place it in the `libraries` folder, or set the existing adb directory as a system variable. *Note: On Mac OS, rename `adb` to `adb-darwin`.
 5. Open a terminal and use PHP interpreter to execute the [script](../bypass.php).
 
-- p.s. Releases has packaged the required files and click-to-run scripts.
+- p.s. Releases have packaged the necessary files and one-click scripts, but do not include php.
 
 6. Tap repeatedly on the `Settings - About Phone - MIUI Version` to enable `Development Options`.
 7. Enable `OEM Unlocking`, `USB Debugging` and `USB Debugging (Security Settings)` in `Settings - Additional Settings - Development Options`.
