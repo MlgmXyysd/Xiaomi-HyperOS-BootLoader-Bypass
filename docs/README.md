@@ -48,6 +48,7 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
   - Only 2 devices per valid SIM card are allowed to be unlock to a valid SIM card within a three-month period.
 - A valid Xiaomi account:
   - An unbanned\* Xiaomi account.
+  - A phone number, same as SIM card you inserted, must be linked to your account.
   - Each account can only unlock 1 phone in a month and 3 phones in a year period.
 - You have read and understood the [Warning](#%EF%B8%8F-warning) above.
 
@@ -66,6 +67,11 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 6. Tap repeatedly on the `Settings - About Phone - MIUI Version` to enable `Development Options`.
 7. Enable `OEM Unlocking`, `USB Debugging` and `USB Debugging (Security Settings)` in `Settings - Additional Settings - Development Options`.
 8. Log in a _valid_\* Xiaomi account.
+
+> **Make sure a phone number is linked to your Xiaomi account before binding.** If there is no option to add a phone number, go to:
+> `https://account.xiaomi.com/pass/serviceLogin?checkSafePhone=true`
+> and add a phone number there.
+
 9. Connect phone to PC via wired interface.
 10. Check `Always allow from this computer` and click `OK`.
 
@@ -73,7 +79,38 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 
 11. Wait and follow the prompts of script.
 12. After successful binding, you can use the [official unlock tool](https://en.miui.com/unlock/index.html) to check the time you need to wait.
+
+> ℹ️ The official unlock tool is Windows-only. On Linux, you can use unofficial cross-platform tools (e.g. [MiUnlockTool](https://github.com/offici5l/MiUnlockTool)) to check the remaining wait time and perform the actual unlock.
+
 13. During the waiting period, please use the device normally, keep the SIM card inserted, do not log out of your account or turn off `Find My Phone`, and do not re-bind the device until it is successfully unlocked. The device will automatically send `HeartBeat` packets to the server every once in a while.
+
+## 🛠️ Troubleshooting
+
+### `adb: invalid transport id` followed by `PHP Fatal error: decryptData(): Argument #1 ($data) must be of type string, null given`
+
+This is the most common issue with recent platform-tools versions (35+). The php-adb library parses the `transport_id` from `adb devices -l` incorrectly for newer adb versions, so the logcat process fails to start. Since the script does not handle this gracefully, `$args` remains `null` and the script crashes with a `TypeError` in `decryptData()`.
+
+**Fix:** bypass the transport id entirely by using the device serial number instead. In `bypass.php`, find the line:
+
+```php
+$id = $adb -> getDeviceId($device[1], true);
+```
+
+and replace it with:
+
+```php
+$id = "-s " . $device[0] . " ";
+```
+
+### The script prints "Now you can bind account..." but nothing happens, then crashes
+
+The script waits for you to tap **"Add account and device"** in `Developer options - Mi Unlock status` on the phone. 
+
+### Unlock tool shows error code `20041`: "Sorry, your MI ID is not associated with a phone number"
+
+Your Xiaomi account has no phone number linked to it. This is required both for binding and for the unlock tool.
+
+**Fix:** if there is no option to add a phone number in your account settings, open `https://account.xiaomi.com/pass/serviceLogin?checkSafePhone=true`, log in and add a phone number there. Then restart the binding process.
 
 ## 📖 Workaround
 
@@ -89,6 +126,9 @@ If you're experiencing any of the above, consider yourself damned. Ever since Xi
 
 - Q: Binding failed with error code `401`.
   - A: Your Xiaomi account credentials have expired, you need to log out and log in again in your device.
+
+- Q: Binding failed with error code `20041`.
+  - A: Your MI ID is not associated with a phone number. Add a phone number to your account; if there is no option to do so, go to `https://account.xiaomi.com/pass/serviceLogin?checkSafePhone=true`.
 
 - Q: Binding failed with error code `20086`.
   - A: Your device credentials have expired, you need to reboot your device.
